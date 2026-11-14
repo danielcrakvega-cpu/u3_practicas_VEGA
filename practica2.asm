@@ -14,7 +14,7 @@ INCLUDE Irvine32.inc
 main PROC 
 	;leo lo q hay en la cima del stack con esp
 	mov eax,[esp]
-	;writehex imprime el valor de eax en hexadecimal
+	;writehex  imprime el valor de eax en hexadecimal
 	call WriteHEx
 	;salto de linea para  q se vea ordenado
 	call Crlf
