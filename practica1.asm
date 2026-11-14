@@ -15,7 +15,7 @@ INCLUDE Irvine32.inc
 
 .code
 main PROC
-	;pongo la direccion del mensaje de inicio en edx
+	;pongo la  direccion del mensaje de inicio en edx
 	mov edx, OFFSET mensajeInicio
 	;writestring imprime lo q este en edx
 	call WriteString
