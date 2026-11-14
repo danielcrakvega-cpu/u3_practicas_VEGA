@@ -8,7 +8,7 @@
 INCLUDE Irvine32.inc
 
 .data
-    ;aqui reservo 50 bytes en cero pa guardar lo q escriba el usuario
+    ;aqui reservo 50 bytes en cero para guardar lo q escriba  el usuario
     cadena BYTE 50 DUP(0)          
     ;mensaje q le pide la cadena al usuario
     msgPedir BYTE "Ingresa una cadena (o presiona Enter para dejarla vacia): ", 0
@@ -28,7 +28,7 @@ main PROC
     mov  edx, OFFSET cadena
     ;en ecx va el tamaño maximo q se puede leer
     mov  ecx, SIZEOF cadena
-    ;readstring lee lo q escribe el usuario y lo guarda en la variable cadena
+    ;readstring lee lo q  escribe el usuario y lo guarda en la variable cadena
     call ReadString
 
     ;2. ahora hay q ver si esta vacia checando el primer byte
@@ -39,13 +39,13 @@ main PROC
 
 ;aqui entra si la cadena no esta vacia
 NoEsVacia:
-    ;cargo el mensaje de no vacia
+    ;cargo el mensaje  de no vacia
     mov  edx, OFFSET msgNoVacia
     ;lo muestro en pantalla
     call WriteString
     ;salto de linea
     call Crlf
-    ;brinco al final pa q no entre a esvacia tambien
+    ;brinco al final para q no entre a esvacia tambien
     jmp  Fin
 
 ;aqui entra si la cadena esta vacia
