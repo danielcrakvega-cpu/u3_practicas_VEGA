@@ -7,7 +7,7 @@
 
 INCLUDE Irvine32.inc
 
-;macro pa mostrar un mensaje en pantalla
+;macro pa mostrar un mensaje  en pantalla
 ;recibe el parametro texto q es el nombre de la variable
 MostrarMensaje MACRO texto
 	;pongo la direccion del texto en edx
@@ -38,7 +38,7 @@ ENDM
 	mensajeFin BYTE "Nos vemos!", 0
 .code
 main PROC 
-	;llamada a la macro pa mostrar el mensaje de bienvenida
+	;llamada a la macro para mostrar el mensaje de bienvenida
 	MostrarMensaje mensajeBienvenida
 	;llamada a la macro pa mostrar el mensaje de despedida
 	MostrarMensaje mensajeFin
