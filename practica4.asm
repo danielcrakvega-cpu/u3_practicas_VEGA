@@ -17,7 +17,7 @@ main PROC
 	 mov ebx, 10
 	 ;el primer valor a multiplicar y guardarlo en la pila
 	 push 1
-	 ;el segundo valor a multiplicar y guardarlo en la pila
+	 ;el segundo valor a multiplicar y guardarlo  en la pila
 	 push 2
 
 	 ;salto al procedimiento sumarpila, aqui se mete la direccion de retorno al stack
@@ -53,7 +53,7 @@ sumarPila PROC
 	;restauro el ebp original
 	pop ebp
 
-	;ret 8 regresa al main y limpia los 8 bytes de parametros q estaban en la pila
+	;ret 8 regresa al main y limpia los 8 bytes  de parametros q estaban en la pila
 	ret 8
 
 sumarPila ENDP
