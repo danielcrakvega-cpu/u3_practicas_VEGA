@@ -16,11 +16,11 @@ main PROC
 	mov eax,[esp]
 	;writehex imprime el valor de eax en hexadecimal
 	call WriteHEx
-	;salto de linea pa q se vea ordenado
+	;salto de linea para  q se vea ordenado
 	call Crlf
-	;llamo al procedimiento procuno, aqui se mete la direccion de retorno al stack
+	;llamo al procedimiento procuno, aqui se mete la direccion de retorno  al stack
 	call procUno	
-	;termina el programa
+	;termina el program
 	exit
 main ENDP
 	
@@ -30,7 +30,7 @@ procUno PROC
 	;imprimo la direccion en hexa
 	call WriteHex
 	call Crlf
-	;al llamar a procdos se empuja otra direccion de retorno al stack
+	;al llamar a procdos se empuja  otra direccion de retorno al stack
 	call procDos
 	
 	;ret saca la direccion del stack y regresa a main
@@ -43,7 +43,7 @@ procDos PROC
 	;la muestro en pantalla en hexadecimal
 	call WriteHex
 	call Crlf
-	;regresa a procuno sacando la direccion del stack
+	;regresa a procuno sacando la direccion del  stack
 	ret
 procDos ENDP
 
