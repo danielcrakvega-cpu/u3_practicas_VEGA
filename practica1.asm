@@ -25,10 +25,10 @@ main PROC
 	;primera llamda al procedimiento
 	call mensajeAviso
 
-	;guardo el 10 en eax solo pa ver q el programa sigue despues del call
+	;guardo el 10 en eax solo para ver q el programa sigue despues del call
 	mov eax, 10
 
-	;segunda llamada al mismo procedimiento, asi se reutiliza el codigo
+	;segunda llamada al mismo  procedimiento, asi se reutiliza el codigo
 	call mensajeAviso
 	;ahora guardo el 20 en eax
 	mov eax, 20
@@ -43,7 +43,7 @@ main PROC
 
 	main ENDP
 
-;aqui empieza el procedimiento q se llama desde el main
+;aqui empieza el procedimiento q se  llama desde el main
 mensajeAviso PROC
 	;cargo el mensaje del procedimiento en edx
 	mov edx, OFFSET mensajeProcedimiento
@@ -51,7 +51,7 @@ mensajeAviso PROC
 	call WriteString
 	;salto de linea
 	call Crlf
-	;ret regresa al main, saca la direccion de retorno del stack y la manda al eip
+	;ret regresa al main, saca la direccion de retorno del stack y la manda al  eip
 	ret
 	mensajeAviso ENDP
 
